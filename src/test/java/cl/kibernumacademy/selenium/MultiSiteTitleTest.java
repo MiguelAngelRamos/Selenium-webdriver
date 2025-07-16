@@ -47,7 +47,7 @@ public class MultiSiteTitleTest {
   }
 
   @Test
-  void validarTituloGoogle() {
+  void validarTituloStackOverflow() {
     // Configurar el driver para chrome y que este proceso sea automatico
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver(); // Inicializamos el navegador Chrome
