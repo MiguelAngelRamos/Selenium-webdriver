@@ -1,11 +1,12 @@
 package cl.kibernumacademy.selenium;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // Clase para pruebas automatizadas
 public class MultiSiteTitleTest {
