@@ -33,4 +33,29 @@ public class MultiSiteTitleTest {
     // Verificar que el titulo contenga la palabra google
     assertTrue(driver.getTitle().contains("Google"));
   }
+
+  @Test
+  void validarTituloGitHub() {
+    // Configurar el driver para chrome y que este proceso sea automatico
+    WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver(); // Inicializamos el navegador Chrome
+    // Abre la página de Google
+    driver.get("https://github.com");
+
+    // Verificar que el titulo contenga la palabra google
+    assertTrue(driver.getTitle().contains("GitHub"));
+  }
+
+  @Test
+  void validarTituloGoogle() {
+    // Configurar el driver para chrome y que este proceso sea automatico
+    WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver(); // Inicializamos el navegador Chrome
+    // Abre la página de Google
+    driver.get("https://stackoverflow.com");
+    // Verificar que el titulo contenga la palabra google
+    assertTrue(driver.getTitle().contains("Stack Overflow"));
+  }
+
+
 }
